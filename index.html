@@ -5,12 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
-     <link rel="icon" type="image/x-icon" href="./images/bookmark-alt-flat.png">
+    <link rel="icon" type="image/x-icon" href="./images/bookmark-alt-flat.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
     <title>Bookmarker</title>
 </head>
 <body>
     <main>
-        <h1>Bookmarker</h1>
+        <div class="app-container">
+            <h1>Bookmarker</h1>
+        </div>
+
+        <form>
+            <fieldset>
+
+            <legend id="legend">Bookmark your favorite sites</legend>
+
+            <div>
+                <label class="col-md-4 control-label" for="siteName">Site Name</label>
+                <input id="siteName" name="siteName" type="text" placeholder="Bookmark Name" class="form-control input-md">
+            </div>
+            <div>
+                <label class="col-md-4 control-label" for="siteURL">Site URL</label>
+                <input id="siteURL" name="siteURL" type="text" placeholder="Website URL" class="form-control input-md"> 
+            </div>
+
+            <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
+
+            </fieldset>
+        </form>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <td>INDEX</td>
+                        <td>WEBSITE NAME</td>
+                        <td>VISIT</td>
+                        <td>DETELE</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class=" py-5 border text-center">1</td>
+                        <td class=" py-5 border text-center p-4">Notebook Basic</td>
+                        <td class=" py-5 border text-center p-4"><button id="visitButton" class="btn">Visit</button></td>
+                        <td class=" py-5 border text-center p-4"><button id="deleteButton" class="btn">Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
     </main>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/index.js"></script>
