@@ -33,7 +33,7 @@
                 <input id="siteURL" name="siteURL" type="text" placeholder="Website URL" class="form-control input-md"> 
             </div>
 
-            <button id="singlebutton" name="singlebutton" class="btn btn-primary">Submit</button>
+            <button type="button" id="submitButton" name="singlebutton" class="btn btn-primary">Submit</button>
 
             </fieldset>
         </form>
@@ -48,18 +48,14 @@
                         <td>DETELE</td>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td class=" py-5 border text-center">1</td>
-                        <td class=" py-5 border text-center p-4">Notebook Basic</td>
-                        <td class=" py-5 border text-center p-4"><button id="visitButton" class="btn">Visit</button></td>
-                        <td class=" py-5 border text-center p-4"><button id="deleteButton" class="btn">Delete</button></td>
-                    </tr>
+                <tbody id='bookmarkTable'>
+                    
                 </tbody>
             </table>
         </div>
         
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/index.js"></script>
 </body>
