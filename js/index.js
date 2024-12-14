@@ -56,7 +56,10 @@ function addBookmark() {
       clearForm();
     } else {
       // eslint-disable-next-line no-undef
-      Swal.fire('Please enter valid URL');
+      Swal.fire({
+        title: 'Please enter valid URL',
+        confirmButtonColor: '#0d6efd',
+      });
     }
   } else {
     // eslint-disable-next-line no-undef
